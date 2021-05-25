@@ -34,5 +34,6 @@ def predict():
 
 
 if __name__ == '__main__':
+	pre_process = pre_process()
 	pipeline = joblib.load('abstract_classification.joblib')
 	app.run(debug=True)
