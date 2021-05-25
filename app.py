@@ -26,7 +26,7 @@ def home():
 @app.route('/predict', methods=['POST'])
 def predict():
 	abstract = request.form['message']
-	prediction = __main__.pipeline.predict([abstract])
+	prediction = pipeline.predict([abstract])
 
 	topic_prediction = topics[prediction[0]]
 
